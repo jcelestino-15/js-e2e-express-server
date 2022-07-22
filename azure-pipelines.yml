@@ -45,3 +45,11 @@ steps:
     targetPath: '$(Build.ArtifactStagingDirectory)/npm'
     artifactName: npm
   displayName: 'Publish npm artifact'  
+
+- script: |
+    yarn install
+  displayName: 'install yarn'
+
+- script: |
+    npm run compile
+  displayName: 'run js compilers'
