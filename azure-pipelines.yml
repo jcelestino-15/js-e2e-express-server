@@ -46,11 +46,3 @@ steps:
     targetPath: '$(Build.ArtifactStagingDirectory)/npm'
     artifactName: npm
   displayName: 'Publish npm artifact'  
-
-- script: |
-    mocha test --reporter mocha-junit-reporter
-  displayName: 'using mocha-junit reporter'
-
-- script: |
-    npm test
-  displayName: 'npm test'
